@@ -12,6 +12,24 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>getServletExample</servlet-name>
+		<servlet-class>servletprograms.getHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getServletExample</servlet-name>
+		<url-pattern>/Frontend/servletprograms/onGetClick</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>postServletExample</servlet-name>
+		<servlet-class>servletprograms.postHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>postServletExample</servlet-name>
+		<url-pattern>/Frontend/servletprograms/onPostSubmit</url-pattern>
+	</servlet-mapping>
 	<servlet>
 		<servlet-name>MyHttpSessionServlet1</servlet-name>
 		<servlet-class>httpsessiontracking.MyServlet1</servlet-class>

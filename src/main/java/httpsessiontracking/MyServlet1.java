@@ -6,11 +6,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import advanced.java.program.Exception;
-import advanced.java.program.HttpSession;
-import advanced.java.program.PrintWriter;
-import advanced.java.program.String;
 
 /**
  * Servlet implementation class MyServlet1
@@ -44,7 +41,7 @@ public class MyServlet1 extends HttpServlet {
 			pwriter.print("Hello " + name);
 			pwriter.print("Your Password is: " + password);
 
-			javax.servlet.http.HttpSession session = request.getSession();
+			HttpSession session = request.getSession();
 
 			session.setAttribute("uname", name);
 			session.setAttribute("upass", password);
