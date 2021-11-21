@@ -31,6 +31,14 @@
 		<url-pattern>/Frontend/servletprograms/onPostSubmit</url-pattern>
 	</servlet-mapping>
 	<servlet>
+		<servlet-name>GenericServletHandler</servlet-name>
+		<servlet-class>servletprograms.genericServletController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericServletHandler</servlet-name>
+		<url-pattern>/Frontend/servletprograms/genericservletHandler</url-pattern>
+	</servlet-mapping>
+	<servlet>
 		<servlet-name>MyHttpSessionServlet1</servlet-name>
 		<servlet-class>httpsessiontracking.MyServlet1</servlet-class>
 	</servlet>
