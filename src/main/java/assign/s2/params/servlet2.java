@@ -39,6 +39,13 @@ public class servlet2 extends HttpServlet {
 		out.print("</br>a = " + application.getInitParameter("a"));
 		out.print("</br>b = " + application.getInitParameter("b"));
 		out.print("</br>c = " + application.getInitParameter("c"));
+		
+		int ad = Integer.parseInt(application.getInitParameter("a")) 
+				* Integer.parseInt(config.getInitParameter("d"));
+		int bc = Integer.parseInt(application.getInitParameter("b")) 
+				- Integer.parseInt(application.getInitParameter("c"));
+		out.print("</br>a*d= " + ad);
+		out.print("</br>b-c= " + bc);
 	}
 
 }

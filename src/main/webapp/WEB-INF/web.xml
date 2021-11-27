@@ -99,7 +99,7 @@
 		<servlet-class>assign.s2.params.servlet3</servlet-class>
 		<init-param>
 			<param-name>d</param-name>
-			<param-value>60</param-value>
+			<param-value>6</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

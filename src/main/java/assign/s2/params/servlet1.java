@@ -41,6 +41,12 @@ public class servlet1 extends HttpServlet {
 		out.print("</br>a = " + application.getInitParameter("a"));
 		out.print("</br>b = " + application.getInitParameter("b"));
 		out.print("</br>c = " + application.getInitParameter("c"));
-		
+
+		int sum = Integer.parseInt(application.getInitParameter("a")) 
+				+ Integer.parseInt(application.getInitParameter("b")) 
+				+ Integer.parseInt(application.getInitParameter("c")) 
+				+ Integer.parseInt(config.getInitParameter("d"));
+		out.print("</br>a+b+c+d = " + sum);
+
 	}
 }
