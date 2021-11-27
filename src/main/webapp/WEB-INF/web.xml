@@ -54,4 +54,57 @@
 		<servlet-name>cookieServlet1</servlet-name>
 		<url-pattern>/Frontend/trackingbycookie1/cookietracking1</url-pattern>
 	</servlet-mapping>
+
+	<context-param>
+		<param-name>a</param-name>
+		<param-value>5</param-value>
+	</context-param>
+	<context-param>
+		<param-name>b</param-name>
+		<param-value>10</param-value>
+	</context-param>
+	<context-param>
+		<param-name>c</param-name>
+		<param-value>15</param-value>
+	</context-param>
+	<servlet>
+		<description></description>
+		<servlet-name>contextconfigServlet1</servlet-name>
+		<servlet-class>assign.s2.params.servlet1</servlet-class>
+		<init-param>
+			<param-name>d</param-name>
+			<param-value>20</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contextconfigServlet1</servlet-name>
+		<url-pattern>/Frontend/assign-context-config-params/servletConfig1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<servlet-name>contextconfigServlet2</servlet-name>
+		<servlet-class>assign.s2.params.servlet2</servlet-class>
+		<init-param>
+			<param-name>d</param-name>
+			<param-value>40</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contextconfigServlet2</servlet-name>
+		<url-pattern>/Frontend/assign-context-config-params/servletConfig2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<servlet-name>contextconfigServlet3</servlet-name>
+		<servlet-class>assign.s2.params.servlet3</servlet-class>
+		<init-param>
+			<param-name>d</param-name>
+			<param-value>60</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contextconfigServlet3</servlet-name>
+		<url-pattern>/Frontend/assign-context-config-params/servletConfig3</url-pattern>
+	</servlet-mapping>
+
 </web-app>
